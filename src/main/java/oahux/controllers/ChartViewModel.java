@@ -1,11 +1,9 @@
 package oahux.controllers;
 
-import oahu.financial.beans.StockBean;
-import oahu.views.chart.IRuler;
+import oahu.financial.Stock;
+import oahux.chart.IRuler;
 
 import java.util.Collection;
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,7 +16,7 @@ public interface ChartViewModel {
     static int CHART_A1_VRULER = 2;
     static int CHART_B1_HRULER = 3;
     static int CHART_B1_VRULER = 4;
-    Collection<StockBean> stockPrices(int period);
+    Collection<Stock> stockPrices(int period);
     String getTicker();
     IRuler getRuler(int id);
     void setRuler(int id, IRuler ruler);
