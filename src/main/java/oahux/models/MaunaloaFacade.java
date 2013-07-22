@@ -1,8 +1,8 @@
 package oahux.models;
 
 import javafx.scene.Node;
-import oahu.financial.beans.DerivativeBean;
-import oahu.financial.beans.StockBean;
+import oahu.financial.Derivative;
+import oahu.financial.Stock;
 
 import java.util.Collection;
 import java.util.Date;
@@ -14,12 +14,12 @@ import java.util.Date;
  * Time: 14:59
  */
 public interface MaunaloaFacade {
-    Collection<StockBean> stockPrices(String ticker, Date fromDx, int period);
-    Collection<StockBean> stockPrices(String ticker, int period);
-    StockBean spot(String ticker);
-    Collection<DerivativeBean> calls(String ticker);
-    Collection<DerivativeBean> puts(String ticker);
-    Collection<DerivativeBean> callsAndPuts(String ticker);
+    Collection<Stock> stockPrices(String ticker, Date fromDx, int period);
+    Collection<Stock> stockPrices(String ticker, int period);
+    Stock spot(String ticker);
+    Collection<Derivative> calls(String ticker);
+    Collection<Derivative> puts(String ticker);
+    Collection<Derivative> callsAndPuts(String ticker);
     Collection<Node> fibLines(String ticker);
     void addFibLine(String ticker, Node line);
 }

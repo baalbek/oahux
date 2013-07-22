@@ -1,7 +1,7 @@
 package oahux.chart;
 
 import javafx.scene.canvas.Canvas;
-import oahu.controllers.ChartViewModel;
+import oahux.controllers.ChartViewModel;
 
 /**
  * Created with IntelliJ IDEA.
