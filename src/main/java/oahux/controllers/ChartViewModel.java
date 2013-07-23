@@ -1,9 +1,11 @@
 package oahux.controllers;
 
-import oahu.financial.Stock;
+import ranoraraku.beans.Stock;
 import oahux.chart.IRuler;
 
 import java.util.Collection;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
