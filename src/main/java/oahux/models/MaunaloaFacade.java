@@ -2,7 +2,7 @@ package oahux.models;
 
 import javafx.scene.Node;
 import oahu.financial.Derivative;
-import oahu.financial.Stock;
+import oahu.financial.StockPrice;
 
 import java.util.Collection;
 import java.util.Date;
@@ -14,9 +14,9 @@ import java.util.Date;
  * Time: 14:59
  */
 public interface MaunaloaFacade {
-    Collection<Stock> stockPrices(String ticker, Date fromDx, int period);
-    Collection<Stock> stockPrices(String ticker, int period);
-    Stock spot(String ticker);
+    Collection<StockPrice> stockPrices(String ticker, Date fromDx, int period);
+    Collection<StockPrice> stockPrices(String ticker, int period);
+    StockPrice spot(String ticker);
     Collection<Derivative> calls(String ticker);
     Collection<Derivative> puts(String ticker);
     Collection<Derivative> callsAndPuts(String ticker);
