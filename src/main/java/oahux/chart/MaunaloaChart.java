@@ -1,7 +1,7 @@
 package oahux.chart;
 
 import javafx.scene.canvas.Canvas;
-import oahux.controllers.ChartViewModel;
+import oahux.controllers.MaunaloaChartViewModel;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,6 +11,6 @@ import oahux.controllers.ChartViewModel;
  */
 public interface MaunaloaChart {
     void draw(Canvas canvas);
-    void setViewModel(ChartViewModel viewModel);
+    void setViewModel(MaunaloaChartViewModel viewModel);
     //void setId(String id);
 }

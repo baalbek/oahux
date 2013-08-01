@@ -3,9 +3,11 @@ package oahux.models;
 import javafx.scene.Node;
 import oahu.financial.Derivative;
 import oahu.financial.StockPrice;
+import oahux.domain.DerivativeFx;
 
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,9 +19,10 @@ public interface MaunaloaFacade {
     Collection<StockPrice> stockPrices(String ticker, Date fromDx, int period);
     Collection<StockPrice> stockPrices(String ticker, int period);
     StockPrice spot(String ticker);
-    Collection<Derivative> calls(String ticker);
-    Collection<Derivative> puts(String ticker);
-    Collection<Derivative> callsAndPuts(String ticker);
+    Collection<DerivativeFx> calls(String ticker);
+    Collection<DerivativeFx> puts(String ticker);
+    Collection<DerivativeFx> callsAndPuts(String ticker);
     Collection<Node> fibLines(String ticker);
     void addFibLine(String ticker, Node line);
+    List<String> getTickers();
 }
