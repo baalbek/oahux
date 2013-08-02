@@ -1,5 +1,7 @@
 package oahux.domain;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.DoubleProperty;
 import oahu.financial.Derivative;
 
 /**
@@ -9,6 +11,8 @@ import oahu.financial.Derivative;
  * Time: 9:20 AM
  */
 public interface DerivativeFx extends Derivative {
-    boolean getIsChecked();
-    void setIsChecked(boolean value);
+    BooleanProperty isCheckedProperty();
+    DoubleProperty riskProperty();
+    void setRisk(double value);
+    DoubleProperty stockPriceRiskProperty();
 }
