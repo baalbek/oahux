@@ -15,4 +15,7 @@ public interface DerivativeFx extends Derivative {
     DoubleProperty riskProperty();
     void setRisk(double value);
     DoubleProperty stockPriceRiskProperty();
+    double getDelta();
+    double getSpread();
+    double getBreakeven();
 }
