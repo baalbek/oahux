@@ -1,5 +1,6 @@
 package oahux.controllers;
 
+import oahu.financial.Stock;
 import oahu.financial.StockPrice;
 import oahux.chart.IRuler;
 
@@ -13,7 +14,7 @@ import java.util.Collection;
  */
 public interface MaunaloaChartViewModel {
     Collection<StockPrice> stockPrices(int period);
-    String getTicker();
+    Stock getTicker();
     IRuler getRuler();
     void setRuler(IRuler ruler);
 }
