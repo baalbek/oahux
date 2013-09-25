@@ -12,5 +12,6 @@ import oahux.controllers.MaunaloaChartViewModel;
 public interface MaunaloaChart {
     void draw(Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
+    void setPadding(double value);
     //void setId(String id);
 }
