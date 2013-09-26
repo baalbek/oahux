@@ -13,5 +13,5 @@ import javafx.geometry.Point2D;
 public interface IRuler {
     double calcPix(Object value);
     Object calcValue(double pix);
-
+    double roundPix(double pix);
 }
