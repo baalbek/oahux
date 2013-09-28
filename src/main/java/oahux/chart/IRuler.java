@@ -11,7 +11,9 @@ import javafx.geometry.Point2D;
  * Time: 4:14 PM
  */
 public interface IRuler {
+    int SNAP_UNIT_DAY = 1;
+    int SNAP_UNIT_WEEK = 2;
     double calcPix(Object value);
     Object calcValue(double pix);
-    double snapTo(double pix, int snapUnits);
+    double snapTo(double pix);
 }
