@@ -1,6 +1,7 @@
 package oahux.models;
 
 import javafx.scene.Node;
+import maunaloa.models.ChartWindowDressingModel;
 import oahu.financial.Stock;
 import oahu.financial.StockPrice;
 import oahux.domain.DerivativeFx;
@@ -25,4 +26,5 @@ public interface MaunaloaFacade {
     Collection<Node> fibLines(String ticker);
     void addFibLine(String ticker, Node line);
     List<Stock> getTickers();
+    ChartWindowDressingModel getWindowDressingModel();
 }
