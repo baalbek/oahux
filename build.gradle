@@ -1,0 +1,14 @@
+apply plugin: 'java'
+group = 'rcstadheim'
+archivesBaseName = 'oahux'
+version = '2.0'
+ 
+repositories {
+    mavenCentral()
+}
+          
+
+dependencies {
+    compile project(':oahu')
+    compile files('../libs/javafx-2.2.jar')
+}
