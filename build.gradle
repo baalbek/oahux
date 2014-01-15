@@ -10,5 +10,6 @@ repositories {
 
 dependencies {
     compile project(':oahu')
-    compile files('../libs/javafx-2.2.jar')
+    //compile files('../libs/javafx-2.2.jar')
+    compile files('../libs/jfxrt.jar')
 }
