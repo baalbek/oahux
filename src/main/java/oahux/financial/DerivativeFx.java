@@ -1,4 +1,4 @@
-package oahux.domain;
+package oahux.financial;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.DoubleProperty;

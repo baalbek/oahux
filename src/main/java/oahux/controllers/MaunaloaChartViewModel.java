@@ -14,7 +14,7 @@ import java.util.Collection;
  */
 public interface MaunaloaChartViewModel {
     Collection<StockPrice> stockPrices(int period);
-    Stock getTicker();
+    Stock getStock();
     IRuler getVruler();
     void setVruler(IRuler ruler);
     IRuler getHruler();
