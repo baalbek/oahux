@@ -7,6 +7,7 @@ import oahu.financial.StockPrice;
 import oahux.chart.IRuler;
 
 import java.util.Collection;
+import java.util.Optional;
 
 /**
  * Created with IntelliJ IDEA.
