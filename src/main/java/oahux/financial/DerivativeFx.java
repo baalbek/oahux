@@ -5,6 +5,8 @@ import javafx.beans.property.DoubleProperty;
 import oahu.financial.Derivative;
 import oahu.financial.DerivativePrice;
 
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rcs
@@ -19,4 +21,6 @@ public interface DerivativeFx extends DerivativePrice {
     double getDelta();
     double getSpread();
     double getBreakeven();
+    String getTicker();
+    Date getExpiry();
 }
