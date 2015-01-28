@@ -1,8 +1,8 @@
 apply plugin: 'java'
 group = 'rcstadheim'
 archivesBaseName = 'oahux'
-version = '3.0'
- 
+version = "$major.$minor.1"
+
 repositories {
     mavenCentral()
 }
@@ -10,6 +10,4 @@ repositories {
 
 dependencies {
     compile project(':oahu')
-    //compile files('../libs/javafx-2.2.jar')
-    //compile files('../libs/jfxrt.jar')
 }
