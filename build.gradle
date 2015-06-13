@@ -11,3 +11,7 @@ repositories {
 dependencies {
     compile project(':oahu')
 }
+
+task cj(type: Copy, dependsOn: [build]) {
+    into '../maunaloa/dist' from new File("$libsDir/$archivesBaseName-${version}.jar")
+}
