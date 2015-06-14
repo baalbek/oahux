@@ -12,8 +12,9 @@ import oahux.controllers.MaunaloaChartViewModel;
 public interface MaunaloaChart {
     void draw(Canvas canvas);
     void shiftWeeks(int weeks, Canvas canvas);
+    String getNumShiftWeeks();
+    void setNumShiftWeeks(String value);
     void shiftToEnd(Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
-    void setPadding(double value);
     //void setId(String id);
 }
