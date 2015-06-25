@@ -16,6 +16,5 @@ public interface MaunaloaChart {
     void setNumShiftWeeks(String value);
     void shiftToEnd(Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
-    void setHasVolume(boolean value);
     //void setId(String id);
 }
