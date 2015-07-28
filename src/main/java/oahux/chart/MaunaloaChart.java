@@ -3,6 +3,8 @@ package oahux.chart;
 import javafx.scene.canvas.Canvas;
 import oahux.controllers.MaunaloaChartViewModel;
 
+import java.time.LocalDate;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rcs
@@ -15,6 +17,7 @@ public interface MaunaloaChart {
     String getNumShiftWeeks();
     void setNumShiftWeeks(String value);
     void shiftToEnd(Canvas canvas);
+    void shiftToDate(LocalDate date, Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
     //void setId(String id);
 }
