@@ -14,8 +14,6 @@ import java.time.LocalDate;
 public interface MaunaloaChart {
     void draw(Canvas canvas);
     void shiftWeeks(int weeks, Canvas canvas);
-    String getNumShiftWeeks();
-    void setNumShiftWeeks(String value);
     void shiftToEnd(Canvas canvas);
     void shiftToDate(LocalDate date, Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
