@@ -17,5 +17,6 @@ public interface MaunaloaChart {
     void shiftToEnd(Canvas canvas);
     void shiftToDate(LocalDate date, Canvas canvas);
     void setViewModel(MaunaloaChartViewModel viewModel);
+    LocalDate getLastCurrentDateShown();
     //void setId(String id);
 }
