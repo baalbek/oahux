@@ -24,5 +24,5 @@ public interface MaunaloaChartViewModel {
     void setHruler(IRuler ruler);
     Tuple<IRuler> getRulers();
     Pane getPane();
-    int getLocation();
+    ControllerEnum getLocation();
 }
