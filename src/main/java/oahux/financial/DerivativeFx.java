@@ -23,4 +23,5 @@ public interface DerivativeFx extends DerivativePrice {
     double getBreakeven();
     String getTicker();
     Date getExpiry();
+    int getDerivativeOid();
 }
