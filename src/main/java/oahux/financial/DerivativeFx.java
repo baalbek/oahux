@@ -4,6 +4,7 @@ import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.DoubleProperty;
 import oahu.financial.Derivative;
 import oahu.financial.DerivativePrice;
+import oahu.financial.OptionCalculator;
 
 import java.util.Date;
 
@@ -14,6 +15,7 @@ import java.util.Date;
  * Time: 9:20 AM
  */
 public interface DerivativeFx extends DerivativePrice {
+    OptionCalculator getCalculator();
     BooleanProperty isCheckedProperty();
     DoubleProperty riskProperty();
     void setRisk(double value);
