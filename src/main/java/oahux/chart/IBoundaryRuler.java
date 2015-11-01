@@ -8,7 +8,7 @@ import javafx.geometry.Point2D;
  * Date: 3/30/13
  * Time: 7:03 PM
  */
-public interface IBoundaryRuler extends IRuler {
+public interface IBoundaryRuler<T> extends IRuler<T> {
     Point2D getLowerRight();
     Point2D getUpperLeft();
 }

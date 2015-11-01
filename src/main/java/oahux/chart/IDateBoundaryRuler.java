@@ -8,7 +8,7 @@ import java.util.Date;
  * Date: 22.10.13
  * Time: 14:40
  */
-public interface IDateBoundaryRuler extends IRuler {
+public interface IDateBoundaryRuler<T> extends IRuler<T> {
     Date getStartDate();
     Date getEndDate();
 }
