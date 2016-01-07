@@ -2,7 +2,6 @@ package oahux.financial;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.DoubleProperty;
-import oahu.financial.Derivative;
 import oahu.financial.DerivativePrice;
 import oahu.financial.OptionCalculator;
 
