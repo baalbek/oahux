@@ -1,6 +1,5 @@
 apply plugin: 'java'
 group = 'rcstadheim'
-archivesBaseName = 'oahux'
 version = "$major.$minor.1"
 
 repositories {
