@@ -18,11 +18,14 @@ import java.util.Collection;
 public interface MaunaloaChartViewModel {
     Collection<StockPrice> stockPrices(int period);
     Stock getStock();
-    IRuler<Double> getVruler();
     void setVruler(IRuler<Double> ruler);
-    IRuler<LocalDate> getHruler();
     void setHruler(IRuler<LocalDate> ruler);
+
+    /*
+    IRuler<Double> getVruler();
+    IRuler<LocalDate> getHruler();
     Tuple2<IRuler<LocalDate>,IRuler<Double>> getRulers();
     Pane getPane();
     ControllerCategory getLocation();
+    */
 }
