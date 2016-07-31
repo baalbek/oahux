@@ -11,6 +11,8 @@ dependencies {
     compile project(':oahu')
 }
 
-task cj(type: Copy, dependsOn: [build]) {
-    into '../maunaloa/dist' from new File("$libsDir/$archivesBaseName-${version}.jar")
+def jarFile = new File("$libsDir/oahux-${version}.jar")
+
+task copyToParentProject(type: Copy, dependsOn: jar) {
+    into parentDist from jarFile
 }
